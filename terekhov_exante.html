@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Terekhov Test</title>
+
+    <link rel="stylesheet" type="text/css" href="app/css/main.css"/>
+
+    <link rel="preload" href="app/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/css/fonts.css"></noscript>
+    <script>
+        !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+  </head>
+
+  <body>
+    <main class="page">
+        <section class="main main_desktop main_mobile">
+
+            <section class="opener opener_column">
+                <div class="desktop-logo destop-logo_positioner">
+                </div>
+                <div class="mobile-logo mobile-logo_positioner">
+                </div>
+                <h1 class="opener__header title title_xl title_center">
+                    World’s first true digital currency
+                </h1>
+                <h2 class="opener__caption opener__caption_size_m title title_md title_center">
+                    bridging the gap between decentralized
+                    finance and people
+                </h2>
+                <a class="opener__scroller scroller_bot">
+                    <div class="opener__arrow">
+                        <img src="app/img/scroller.svg" alt="" width="64" height="64">
+                    </div>
+                </a>
+            </section>
+
+            <section class="main__tabs main__tabs_desktop main__tabs_mobile">
+                <section class="tab tab_desktop tab_one carousel">
+                    <div class="carousel__controls">
+                        <div class="arrow arrow_left"></div>
+                        <div class="arrow arrow_right"></div>
+                    </div>
+                    <h1 class="tab__header title title_xl">
+                        Reshaping the future of finance and digital innovation
+                    </h1>
+                    <h3 class="tab__caption title title_sm">
+                        STASIS represents the next big step: combining the potential of the cryptocurrency market with the reliability
+                        of fiat currencies, and becoming a winning choice for any market behavior.
+                    </h3>
+                        <h3 class="tab__caption_mobile title title_sm">
+                            STASIS сочетает лучшее, что могут предложить открытые технологии blockchain и&#160;традиционные платежные системы
+                        </h3>
+                    <div class="advantage advantage_one">
+                        <div class="advantage__header">
+                            <img class="advantage__icon" width="44" height="44" src="app/img/icon_advantage.svg" alt="">
+                            <h2 class="title title_md">
+                                Using Blockchain
+                            </h2>
+                        </div>
+                        <h3 class="title title_sm">
+                            STASIS platform is based on the Blockchain technology, the main innovation
+                            of the recent years which raised the world of finance to the new level of
+                            security and transparency.
+                        </h3>
+                    </div>
+                    <div class="advantage advantage_two">
+                        <div class="advantage__header">
+                            <img class="advantage__icon" width="44" height="44" src="app/img/icon_advantage.svg" alt="">
+                            <h2 class="title title_md">
+                                Stability
+                            </h2>
+                        </div>
+                        <h3 class="title title_sm">
+                            The cost of one unit of the new currency issued on the STASIS platform is
+                            tied to the underlying national currency - be it the euro, won or British pound.
+                        </h3>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <a class="hamburger hamburger_desktop hamburger_mobile"></a>
+
+        <aside class="side-bar side-bar_left">
+            <section class="side-bar__content">
+                <div class="side-bar__logo"></div>
+                <a class="title title_xs side-bar__link" id="block1">
+                    how it works
+                </a>
+                <a class="title title_xs side-bar__link">
+                    government relations
+                </a>
+                <a class="title title_xs side-bar__link">
+                    stasis tokens
+                </a>
+                <a class="title title_xs side-bar__link">
+                    innovations and traditions
+                </a>
+                <a class="title title_xs side-bar__link">
+                    contact
+                </a>
+            </section>
+        </aside>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    $('.side-bar__link').click(function(event) {
+        $('.side-bar__link_active').removeClass('side-bar__link_active');
+        $(this).addClass('side-bar__link_active');
+    });
+    $('.side-bar__link').click(function(event) {
+        $('.main__tabs_desktop').addClass('main__tabs_desktop_show');
+    });
+    </script>
+    
+    <script type="text/javascript">
+        document.querySelector('.hamburger_desktop').addEventListener("click", function() {
+            document.querySelector('.main_desktop').classList.toggle('main_with-side');
+            document.querySelector('.side-bar').classList.toggle('side-bar_adjust');
+            document.querySelector('.hamburger_desktop').classList.toggle('hamburger_desktop_on-side');
+        });
+    </script>
+  </body>
+</html>
